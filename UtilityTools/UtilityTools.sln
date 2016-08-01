@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quartz", "Quartz", "{F4558E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz", "Quartz\Quartz.csproj", "{BBFDBE61-60D3-4EB5-9580-E9DB10526B28}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topshelf", "Topshelf", "{EF235C7B-A31A-46C8-9550-F39A3178E9B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf", "Topshelf\Topshelf.csproj", "{16D53F37-736D-4594-88BE-B45508EDF808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,16 @@ Global
 		{BBFDBE61-60D3-4EB5-9580-E9DB10526B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBFDBE61-60D3-4EB5-9580-E9DB10526B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBFDBE61-60D3-4EB5-9580-E9DB10526B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D53F37-736D-4594-88BE-B45508EDF808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D53F37-736D-4594-88BE-B45508EDF808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D53F37-736D-4594-88BE-B45508EDF808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D53F37-736D-4594-88BE-B45508EDF808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BBFDBE61-60D3-4EB5-9580-E9DB10526B28} = {F4558E3D-DF2C-4542-B5C0-BD862781EAA1}
+		{16D53F37-736D-4594-88BE-B45508EDF808} = {EF235C7B-A31A-46C8-9550-F39A3178E9B8}
 	EndGlobalSection
 EndGlobal

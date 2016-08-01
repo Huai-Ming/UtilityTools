@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+using Common.Logging;
+using Common.Logging.Simple;
 using Quartz.Impl;
 
 namespace Quartz.Basic
 {
-    class Basic
+    class Client
     {
         private static void Main(string[] args)
         {
             try
             {
-                Common.Logging.LogManager.Adapter = new Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter { Level = Common.Logging.LogLevel.Info };
+                LogManager.Adapter = new ConsoleOutLoggerFactoryAdapter { Level = LogLevel.Info };
 
                 // Grab the Scheduler instance from the Factory 
                 IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler();
