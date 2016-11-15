@@ -26,8 +26,10 @@ namespace HttpUtility
                     // Get the response stream
                     if (response != null)
                     {
-                        StreamReader reader = new StreamReader(response.GetResponseStream());
-                        return reader.ReadToEnd();
+                        using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                        {
+                            return reader.ReadToEnd();
+                        }
                     }
                 }
             }
@@ -73,10 +75,11 @@ namespace HttpUtility
                     // Get the response stream
                     if (response != null)
                     {
-                        StreamReader reader = new StreamReader(response.GetResponseStream());
-
-                        // output
-                        return reader.ReadToEnd();
+                        using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                        {
+                            // output
+                            return reader.ReadToEnd();
+                        }
                     }
                 }
             }
